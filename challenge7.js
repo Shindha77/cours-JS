@@ -13,8 +13,11 @@ const tips = bills.map((element) => {
     return calcTip(element);
 });
 
+let totals = [];
+
 for (let i = 0; i < bills.length; i++) {
-    const totals = bills[i] + tips[i];
-    console.log(totals);
+    totals[i] = bills[i] + tips[i];
 }
+
+console.log(totals);
 
