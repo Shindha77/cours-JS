@@ -7,7 +7,7 @@ const calcTip = function (note) {
     return tipS;
 }
 
-const bills = [125, 555, 44];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
 const tips = bills.map((element) => {
     return calcTip(element);
@@ -20,4 +20,15 @@ for (let i = 0; i < bills.length; i++) {
 }
 
 console.log(totals);
+
+const calcAverage = function (array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    average = sum / array.length;
+    return average.toFixed(2);
+}
+
+console.log(calcAverage(totals));
 
